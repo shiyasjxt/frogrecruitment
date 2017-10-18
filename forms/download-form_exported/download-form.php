@@ -9,8 +9,6 @@ require $scriptpath . '/fbapp/php/config.inc.php';
 $home = substr(__DIR__, 0, strpos(str_replace('\\', '/', __DIR__), '/FORMS'));
 require $home . '/_common/inc/fbapp/aws-patch.php';
 
-
-
 if( strtoupper( $_SERVER['REQUEST_METHOD'] ) == 'POST' ) {
 
 	$ctl = new FormController();

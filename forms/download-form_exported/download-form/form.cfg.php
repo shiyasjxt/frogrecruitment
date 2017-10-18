@@ -32,7 +32,7 @@
 			"custom" : 
 			{
 				"body" : "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en\">\n<head><title>You got mail!</title></head>\n<body>\n<p><strong>Thanks for taking the time to fill out the form.<br/>Here's a copy of what you submitted:</strong></p>\n<p>\n[_form_results_]\n</p>\n</body>\n</html>",
-				"is_present" : true,
+				"is_present" : false,
 				"subject" : "Thank you for your submission"
 			},
 			"from" : "forms@jxt.com.au",
@@ -47,7 +47,7 @@
 			{
 				"body" : "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en\">\n<head><title>You got mail!</title></head>\n<body>\n<p>Someone filled out your form, and here's what they said:</p>\n<p>[_form_results_]</p>\n</body>\n</html>",
 				"is_present" : true,
-				"subject" : "Enquiry form has just been submitted"
+				"subject" : "Salary Survey Form Submitted"
 			},
 			"from" : "forms@jxt.com.au",
 			"is_present" : true,
@@ -85,7 +85,7 @@
 	"redirect_settings" : 
 	{
 		"confirmpage" : "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en\">\n<head>\n<title>Success!</title>\n<meta charset=\"utf-8\">\n<style type=\"text/css\">\nbody {background: #f9f9f9;padding-left: 11%;padding-top: 7%; padding-right: 2%;max-width:700px;font-family: Helvetica, Arial;}\ntable{width:80%;}\np{font-size: 16px;font-weight: bold;color: #666;}\nh1{font-size: 60px !important;color: #ccc !important;margin:0px;}\nh2{font-size: 28px !important;color: #666 !important;margin: 0px; border-bottom: 1px dotted #00A2FF; padding-bottom:3px;}\nh3{font-size: 16px; color: #a1a1a1; border-top: 1px dotted #00A2FF; padding-top:1.7%; font-weight: bold;}\nh3 span{color: #ccc;}\ntd {font-size: 12px !important; line-height: 30px;  color: #666 !important; margin: 0px;border-bottom: 1px solid #e9e9e9;}\ntd:first-child {font-size: 13px !important; font-weight:bold; color: #333 !important; vertical-align:text-top; min-width:50%; padding-right:5px;}\na:link {color:#666; text-decoration:none;} a:visited {color:#666; text-decoration:none;} a:hover {color:#00A2FF;}\n</style>\n</head>\n<body>\n<h1>Thanks! </h1>\n<h2>The form is on its way.</h2>\n<p>Here&rsquo;s what was sent:</p>\n<div>[_form_results_]</div>\n<!-- link back to your Home Page -->\n<h3>Let&rsquo;s go <span> <a target=\"_blank\" href=\"http://www.coffeecup.com\">Back Home</a></span></h3>\n</body>\n</html>\n",
-		"gotopage" : "https://www.frogrecruitment.co.nz/media/frog-recruitment/client/2017-2018%20Frog%20Recruitment%20Salary%20Survey.pdf",
+		"gotopage" : "http://www.frogrecruitment.co.nz/thank-you-for-downloads",
 		"inline" : "<h2>Thank you!</h2>\n<p>Your form was successfully submitted.</p>",
 		"type" : "gotopage"
 	},
@@ -95,5 +95,5 @@
 "rules":{"name":{"label":"First Name *","fieldtype":"text","required":true},"text26":{"label":"Last Name","fieldtype":"text"},"email22":{"email":true,"label":"Email *","fieldtype":"email","required":true},"phone":{"label":"Contact number *","fieldtype":"text","required":true},"text28":{"label":"Title(if applicable)","fieldtype":"text"},"text32":{"label":"Company(if applicable)","fieldtype":"text"}},
 "payment_rules":{},
 "conditional_rules":{},
-"application_version":"Web Form Builder (Windows), build 2.3.5217"
+"application_version":"Web Form Builder (OSX), build 2.3.5217"
 }

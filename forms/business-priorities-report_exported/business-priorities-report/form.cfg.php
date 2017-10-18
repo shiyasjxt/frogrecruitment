@@ -32,7 +32,9 @@
 			"custom" : 
 			{
 				"body" : "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en\">\n<head><title>You got mail!</title></head>\n<body>\n<p><strong>Thanks for taking the time to fill out the form.<br/>Here's a copy of what you submitted:</strong></p>\n<p>\n[_form_results_]\n</p>\n</body>\n</html>",
-				"is_present" : true,
+				"is_from_red" : false,
+				"is_present" : false,
+				"key" : "custom-code(108)",
 				"subject" : "Thank you for your submission"
 			},
 			"from" : "forms@jxt.com.au",
@@ -46,8 +48,10 @@
 			"custom" : 
 			{
 				"body" : "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en\">\n<head><title>You got mail!</title></head>\n<body>\n<p>Someone filled out your form, and here's what they said:</p>\n<p>[_form_results_]</p>\n</body>\n</html>",
+				"is_from_red" : false,
 				"is_present" : true,
-				"subject" : "Submit Resume form has just been submitted"
+				"key" : "custom-code(107)",
+				"subject" : "Business Priority Form Submitted"
 			},
 			"from" : "forms@jxt.com.au",
 			"is_present" : true,
@@ -95,5 +99,5 @@
 "rules":{"firstname":{"label":"First Name *","fieldtype":"text","required":true},"lastname":{"label":"Last Name *","fieldtype":"text","required":true},"email":{"email":true,"label":"Email Address *","fieldtype":"email","required":true},"organisation":{"label":"Organisation","fieldtype":"text"},"jobtitle":{"label":"Job Title","fieldtype":"text"}},
 "payment_rules":{},
 "conditional_rules":{},
-"application_version":"Web Form Builder (Windows), build 2.3.5217"
+"application_version":"Web Form Builder (OSX), build 2.3.5217"
 }

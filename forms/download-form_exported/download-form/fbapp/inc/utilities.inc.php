@@ -146,8 +146,8 @@ function SaveUploadAsFile ( $dest, $filedata ) {
 
 	// AWS-PATCH-NO-LOCAL-FILE //
 	// store the file in Amazon S3 instead of disk
-$home = substr(__DIR__, 0, strpos(str_replace('\\', '/', __DIR__), '/FORMS'));
-require_once $home . '/_common/inc/fbapp/php/aws-s3.php';
+	$home = substr(__DIR__, 0, strpos(str_replace('\\', '/', __DIR__), '/FORMS'));
+	require_once $home . '/_common/inc/fbapp/php/aws-s3.php';
 	return AWS_S3::SaveUploadAsFileToAmazonS3($dest, $filedata);
 
 	if( ! is_dir( $dest ) && !mkdir( $dest, 0755, true ) )

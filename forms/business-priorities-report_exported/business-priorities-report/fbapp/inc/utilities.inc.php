@@ -23,8 +23,10 @@ if( strcmp( PHP_VERSION, '5.2' ) < 0 ) {
 // $text1 or 2 are flattened if they are simple arrays.
 // $text1 and $text2 are concatenated with a space
 function writeErrorLog ( $text1 ) {
+
 	// AWS-PATCH-NO-LOGS //
-    return;
+	return;
+
 	global $scriptpath;
 	global $errorLoggingType;
 	
@@ -141,12 +143,13 @@ function url( $value )
 
 
 function SaveUploadAsFile ( $dest, $filedata ) {
-	
+
 	// AWS-PATCH-NO-LOCAL-FILE //
 	// store the file in Amazon S3 instead of disk
 	$home = substr(__DIR__, 0, strpos(str_replace('\\', '/', __DIR__), '/FORMS'));
 	require_once $home . '/_common/inc/fbapp/php/aws-s3.php';
 	return AWS_S3::SaveUploadAsFileToAmazonS3($dest, $filedata);
+
 	if( ! is_dir( $dest ) && !mkdir( $dest, 0755, true ) )
 	{
 		writeErrorLog( 'Could not create file upload directory \'' . $dest . '\'' );

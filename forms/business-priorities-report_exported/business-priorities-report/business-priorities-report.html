@@ -23,14 +23,14 @@ style="border-width: 0px; margin: 0px; font-size: 12px; max-width: 448px; box-sh
 action="../business-priorities-report.php" enctype="multipart/form-data"
 method="post" novalidate="novalidate" data-boxshadow="false" data-margin="custom"
 data-form="manual_iframe">
-  <div class="fb-form-header" id="fb-form-header1" style="height: 20px; padding-top: 0px; padding-left: 0px; min-height: 20px; background-color: transparent;">
+  <div class="fb-form-header" id="fb-form-header1" style="height: 20px; padding-top: 0px; padding-left: 0px; background-color: transparent;">
     <a class="fb-link-logo" id="fb-link-logo1" style="max-width: 104px;" target="_blank"><img title="Alternative text" class="fb-logo" id="fb-logo1" style="width: 100%; display: none;" alt="Alternative text" src="common/images/image_default.png"/></a>
   </div>
   <div class="section" id="section1">
     <div class="column ui-sortable" id="column1">
-      <div id="fb_confirm_inline" style="display: none; min-height: 200px;">
+      <div style="display:none; min-height:200px;" id="fb_confirm_inline">
       </div>
-      <div id="fb_error_report" style="display: none;">
+      <div style="display:none;" id="fb_error_report">
       </div>
       <div class="fb-item fb-100-item-column" id="item15" style="padding: 0px; opacity: 1;">
         <div class="fb-html">
@@ -91,7 +91,8 @@ data-form="manual_iframe">
     <div class="fb-grouplabel sigpad_label_container">
       <label class="sigPad_label">Sign Below</label>
     </div>
-    <img class="sigpad_image" src="editordata/images/sigpad.png" />
+    <img class="sigpad_image" src="editordata/images/sigpad.png" style=""
+    />
     <div class="fb-grouplabel sigpad_clear_container">
       <label class="sigPad_clear">Clear</label>
     </div>
@@ -102,10 +103,10 @@ data-form="manual_iframe">
     type="submit" data-regular="" data-valign="bottom" value="Download Report"
     />
   </div>
-  <input name="fb_form_custom_html" type="hidden" />
-  <input name="fb_form_embedded" type="hidden" />
-  <input name="fb_js_enable" id="fb_js_enable" type="hidden" />
-  <input name="fb_url_embedded" id="fb_url_embedded" type="hidden" />
+  <input type="hidden" name="fb_form_custom_html" />
+  <input type="hidden" name="fb_form_embedded" />
+  <input type="hidden" id="fb_js_enable" name="fb_js_enable" />
+  <input type="hidden" id="fb_url_embedded" name="fb_url_embedded" />
 </form>
 <!-- End of the body content for CoffeeCup Web Form Builder -->
 
